@@ -74,3 +74,14 @@ body {
 img {
     border-radius: 50%;
 }
+
+ .my-box {
+            height: 650px;
+            width: 500px;
+            box-shadow: 5px 5px 10px 1px #000000;
+            color: rgb(222, 222, 222);
+            margin-top: 20px;
+            box-shadow: 5px 5px 10px 1px #000000;
+
+        }
+
