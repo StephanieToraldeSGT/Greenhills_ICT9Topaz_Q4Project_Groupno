@@ -16,12 +16,17 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
+
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
     </style>
 </head>
 
 <body>
 
+<!-- NAVBAR -->
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <div class="container-fluid">
         <a href="index.html" class="navbar-brand">
@@ -45,34 +50,35 @@
     </div>
 </nav>
 
-<div class="container mt-5">
-    <div class="p-4 bg-white rounded shadow">
+<!-- CENTERED CONTENT -->
+<div class="container d-flex justify-content-center align-items-center flex-grow-1">
+    <div class="p-4 bg-white rounded shadow text-center">
 
         <h2>Information and Communications Technology</h2>
         <h4 class="mb-4">The Curriculum</h4>
 
-        <ol>
+        <ol class="text-start">
             <strong>I. 1st Quarter</strong>
             <li>Introduction to HTML</li>
             <li>Basic CSS Styling</li>
             <li>Quarter Project</li>
         </ol>
 
-        <ol>
+        <ol class="text-start">
             <strong>II. 2nd Quarter</strong>
             <li>Introduction to Bootstrap</li>
             <li>Bootstrap with Forms</li>
             <li>Quarter Project</li>
         </ol>
 
-        <ol>
+        <ol class="text-start">
             <strong>III. 3rd Quarter</strong>
             <li>Introduction to JavaScript</li>
             <li>JavaScript datatypes, operators and variables</li>
             <li>Quarter Project</li>
         </ol>
 
-        <ol>
+        <ol class="text-start">
             <strong>IV. 4th Quarter</strong>
             <li>Conditional Statements</li>
             <li>Iteration Statements</li>
