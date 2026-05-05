@@ -1,7 +1,7 @@
-   let attempts = 3;
+  let attempts = 3;
 
 function validateLogin(event) {
-    event.preventDefault(); // i hate my life
+    event.preventDefault();
 
     let username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
@@ -11,48 +11,38 @@ function validateLogin(event) {
     let correctPassword = "1234";
 
     if (attempts <= 0) {
-        alert("Too many failed attempts. Refresh the page to try again.");
+        alert("You are locked out. Refresh the page to try again.");
         return;
     }
 
-    if (username === correctUsername && password === correctPassword) {
-        alert("Login successful!");
+    if (username !== correctUsername || password !== correctPassword) {
 
-        if (remember) {
-            localStorage.setItem("savedUser", username);
-        } else {
-            localStorage.removeItem("savedUser");
+        attempts--;
+
+        if (username === password) {
+            alert("Username and password cannot be the same!");
+        }
+        else if (username.length < 5) {
+            alert("Username must be at least 5 characters long!");
+        }
+        else if (password.length < 5) {
+            alert("Password must be at least 5 characters long!");
+        }
+        else {
+            alert("Invalid username or password!");
         }
 
-        window.location.href = "dashboard.html";
+        alert("Attempts left: " + attempts);
         return;
     }
 
-    attempts--;
+    alert("Login successful!");
 
-    if (username === password) {
-        alert("Username and password cannot be the same!");
-    }
-    else if (username.length < 5) {
-        alert("Username must be at least 5 characters long!");
-    }
-    else if (password.length < 5) {
-        alert("Password must be at least 5 characters long!");
-    }
-    else {
-        alert("Invalid username or password!");
-    }
-
-    alert("Attempts left: " + attempts);
-}
-
-function toggleInstructions() {
-    let instructions = document.getElementById("instructions");
-    let current = window.getComputedStyle(instructions).display;
-
-    if (current === "none") {
-        instructions.style.display = "block";
+    if (remember) {
+        localStorage.setItem("savedUser", username);
     } else {
-        instructions.style.display = "none";
+        localStorage.removeItem("savedUser");
     }
+
+    window.location.href = "dashboard.html";
 }
