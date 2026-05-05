@@ -34,7 +34,7 @@ img {
     border: 3px solid rgba(255, 255, 255, 0.6);
 }
 
-nav-item {
+.nav-item {
     background: rgba(199, 218, 217, 0.85);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
