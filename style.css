@@ -10,18 +10,19 @@ body {
     height: 100vh;
     background: #111;
     color: white;
-    padding: 20px;
-
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
 
     position: fixed;
     top: 0;
     left: 0;
+
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    z-index: 9999;
 }
 
-/* SIDEBAR TITLE */
 .sidebar-title {
     font-weight: bold;
     margin-bottom: 10px;
