@@ -5,8 +5,10 @@ function validateLogin() {
     let correctUsername = "admin";
     let correctPassword = "1234";
 
-   if (username === correctUsername && password === correctPassword) {
-        window.alert("Your username is: " + username + ", and your password is: " + password);
+    if (username === correctUsername && password === correctPassword) {
+        window.alert("Login successful!");
+
+        window.location.href = "dashboard.html";
     }
     else if (username === password) {
         window.alert("Username and password cannot be the same!");
