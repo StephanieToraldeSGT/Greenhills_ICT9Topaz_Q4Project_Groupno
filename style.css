@@ -16,3 +16,44 @@ body {
     max-width: 400px;
     width: 100%;
 }
+
+body {
+    background-image: url(OBMC.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+img {
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 1rem auto 1rem;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 3px solid rgba(255, 255, 255, 0.6);
+}
+
+nav-item {
+    background: rgba(199, 218, 217, 0.85);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    max-width: 500px;
+    margin: 2rem auto;
+}
+
+form {
+    background: rgba(226, 226, 226, 0.85);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    max-width: 500px;
+    margin: 2rem auto;
+}
