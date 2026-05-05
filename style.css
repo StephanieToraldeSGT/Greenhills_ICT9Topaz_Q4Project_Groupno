@@ -38,3 +38,7 @@ img {
 .navbar {
     width: 100%;
 }
+
+nav.navbar {
+    flex-shrink: 0;
+}
