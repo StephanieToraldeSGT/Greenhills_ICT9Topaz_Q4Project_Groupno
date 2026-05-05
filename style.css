@@ -1,8 +1,10 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-}
 
+    background: url("butterdie.png") no-repeat center center fixed;
+    background-size: cover;
+}
 .sidebar {
     width: 220px;
     height: 100vh;
