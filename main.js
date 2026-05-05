@@ -1,5 +1,8 @@
-    let attempts = 3;
-function validateLogin() {
+   let attempts = 3;
+
+function validateLogin(event) {
+    event.preventDefault(); // i hate my life
+
     let username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
     let remember = document.getElementById("remember").checked;
@@ -14,7 +17,7 @@ function validateLogin() {
 
     if (username === correctUsername && password === correctPassword) {
         alert("Login successful!");
-        
+
         if (remember) {
             localStorage.setItem("savedUser", username);
         } else {
@@ -41,4 +44,15 @@ function validateLogin() {
     }
 
     alert("Attempts left: " + attempts);
+}
+
+function toggleInstructions() {
+    let instructions = document.getElementById("instructions");
+    let current = window.getComputedStyle(instructions).display;
+
+    if (current === "none") {
+        instructions.style.display = "block";
+    } else {
+        instructions.style.display = "none";
+    }
 }
