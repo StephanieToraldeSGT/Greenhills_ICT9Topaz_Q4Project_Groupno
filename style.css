@@ -34,3 +34,7 @@ img {
 .nav-link {
     border-radius: 10px;
 }
+
+.navbar {
+    width: 100%;
+}
