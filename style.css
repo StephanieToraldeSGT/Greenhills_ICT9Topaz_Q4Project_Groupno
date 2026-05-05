@@ -31,7 +31,6 @@ img {
     border: 3px solid rgba(255, 255, 255, 0.6);
 }
 
-.navbar-nav .nav-link {
+.nav-link {
     border-radius: 10px;
-    padding: 8px 12px;
 }
