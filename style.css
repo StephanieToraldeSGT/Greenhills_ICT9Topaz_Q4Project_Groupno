@@ -45,3 +45,12 @@ nav-item {
     max-width: 500px;
     margin: 2rem auto;
 }
+
+.container-fluid {
+            height: 650px;
+            width: 500px;
+            color: rgb(222, 222, 222);
+            margin-top: 20px;
+            box-shadow: 5px 5px 10px 1px #000000;
+
+        }
