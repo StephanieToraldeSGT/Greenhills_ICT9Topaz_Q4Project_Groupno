@@ -59,7 +59,9 @@ body {
 }
 
 .navbar {
-    width: 100%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    min-height: 50px;
 }
 
 .login-container {
