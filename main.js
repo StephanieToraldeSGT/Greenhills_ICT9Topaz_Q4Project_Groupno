@@ -46,3 +46,11 @@ function validateLogin(event) {
 
     window.location.href = "dashboard.html";
 }
+
+function take_activity() {
+    window.alert("Oops! It seems you're no longer able to complete this activity after the deadline!")
+}
+
+function submit_ouput() {
+    window.alert("Oops! It seems you're no longer able to submit a file after the deadline!")
+}
