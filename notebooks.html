@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Classes</title>
+    <title>Classes</title>
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-<style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
         body {
 
             background: url("butterdie.png") no-repeat center center fixed;
@@ -94,86 +94,108 @@
             display: inline-block;
         }
     </style>
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="page-bg">
+    <div class="page-bg">
 
-    <div class="sidebar">
-        <div class="sidebar-title">Menu</div>
+        <div class="sidebar">
+            <div class="sidebar-title">Menu</div>
 
-        <a href="dashboard.html" class="sidebar-link">Dashboard</a>
-        <a href="notebooks.html" class="sidebar-link active">Classes</a>
-        <a href="tasks.html" class="sidebar-link">Tasks</a>
-        <a href="profile.html" class="sidebar-link">Profile</a>
-              <a href="aboutus.html" class="sidebar-link">About Us</a>
-    </div>
+            <a href="dashboard.html" class="sidebar-link">Dashboard</a>
+            <a href="notebooks.html" class="sidebar-link active">Classes</a>
+            <a href="tasks.html" class="sidebar-link">Tasks</a>
+            <a href="profile.html" class="sidebar-link">Profile</a>
+            <a href="aboutus.html" class="sidebar-link">About Us</a>
+        </div>
 
-    <div class="main-content">
+        <div class="main-content">
 
-        <nav class="navbar navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a href="index.html" class="navbar-brand">
-                    <img src="OBMC LOGO.png" style="border-radius:50%;" width="50" height="50">
-                </a>
-            </div>
-        </nav>
+            <nav class="navbar navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="OBMC LOGO.png" style="border-radius:50%;" width="50" height="50">
+                    </a>
+                </div>
+            </nav>
 
-        <div id="container">
+            <div id="container" onclick="class_clicked()">
 
-            <div id="box1">
-                <h4>Filipino</h4>
-                <img src="jillwellington-stack-of-books-1001655_1920.jpg" style="width:500px;height:125px;">
-                <h6>9-Topaz 2025-2026</h6>
-                <p>Ms. Agala</p>
-            </div>
+                <div id="box1">
+                    <h4>Filipino</h4>
+                    <img src="jillwellington-stack-of-books-1001655_1920.jpg" style="width:500px;height:125px;">
+                    <h6>9-Topaz 2025-2026</h6>
+                    <p>Ms. Agala</p>
+                </div>
 
-            <div id="box2">
-                <h4>English</h4>
-                <img src="jillwellington-stack-of-books-1001655_1920.jpg" style="width:500px;height:125px;">
-                <h6>9-Topaz 2025-2026</h6>
-                <p>Ms. Marjorie</p>
-            </div>
+                <div id="box2">
+                    <h4>English</h4>
+                    <img src="jillwellington-stack-of-books-1001655_1920.jpg" style="width:500px;height:125px;">
+                    <h6>9-Topaz 2025-2026</h6>
+                    <p>Ms. Marjorie</p>
+                </div>
 
-            <div id="box3">
-                <h4>Math</h4>
-                <img src="jillwellington-stack-of-books-1001655_1920.jpg" style="width:500px;height:125px;">
-                <h6>9-Topaz 2025-2026</h6>
-                <p>Ms. Marylyn</p>
-            </div>
+                <div id="box3">
+                    <h4>Math</h4>
+                    <img src="jillwellington-stack-of-books-1001655_1920.jpg" style="width:500px;height:125px;">
+                    <h6>9-Topaz 2025-2026</h6>
+                    <p>Ms. Marylyn</p>
+                </div>
 
-            <div id="box4">
-                <h4>Science</h4>
-                <img src="jillwellington-stack-of-books-1001655_1920.jpg" style="width:500px;height:125px;">
-                <h6>9-Topaz 2025-2026</h6>
-                <p>Mr. Valdorio</p>
-            </div>
+                <div id="box4">
+                    <h4>Science</h4>
+                    <img src="jillwellington-stack-of-books-1001655_1920.jpg" style="width:500px;height:125px;">
+                    <h6>9-Topaz 2025-2026</h6>
+                    <p>Mr. Valdorio</p>
+                </div>
 
-            <div id="box5">
-                <h4>Social Studies</h4>
-                <img src="jillwellington-stack-of-books-1001655_1920.jpg" style="width:500px;height:125px;">
-                <h6>9-Topaz 2025-2026</h6>
-                <p>Ms. Ambrose</p>
-            </div>
+                <div id="box5">
+                    <h4>Social Studies</h4>
+                    <img src="jillwellington-stack-of-books-1001655_1920.jpg" style="width:500px;height:125px;">
+                    <h6>9-Topaz 2025-2026</h6>
+                    <p>Ms. Ambrose</p>
+                </div>
 
-            <div id="box6">
-                <h4>Values Education</h4>
-                <img src="jillwellington-stack-of-books-1001655_1920.jpg" style="width:500px;height:125px;">
-                <h6>9-Topaz 2025-2026</h6>
-                <p>Ms. Renner</p>
+                <div id="box6">
+                    <h4>Values Education</h4>
+                    <img src="jillwellington-stack-of-books-1001655_1920.jpg" style="width:500px;height:125px;">
+                    <h6>9-Topaz 2025-2026</h6>
+                    <p>Ms. Renner</p>
+                </div>
+
             </div>
 
         </div>
-
     </div>
-</div>
-        <script src="main.js"></script>
+    <script>
+        function class_clicked() {
+
+
+            const class_notebooks = ["#box1", "#box2", "#box3", "#box4", "#box5", "#box6"];
+
+            switch (class_notebooks) {
+                case "#box1":
+                    window.alert("You're already a part of Ms. Agala's class! There are no requirements to be submitted as of the moment.")
+                case "#box2":
+                    window.alert("You're already a part of Ms. Marjorie's class! There are no requirements to be submitted as of the moment.")
+                case "#box3":
+                    window.alert("You're already a part of Ms. Marylyn's class! Check the tasks tab for the following requirement to be done!")
+                case "#box4":
+                    window.alert("You're already a part of Mr. Valdorio's class! Check the tasks tab for the following requirement to be done!")
+                case "#box5":
+                    window.alert("You're already a part of Ms. Ambrose's class! There are no requirements to be submitted as of the moment.")
+                case "#box6":
+                    window.alert("You're already a part of Ms. Renner's class! Check the tasks tab for the following requirement to be done!")
+            }
+        }
+    </script>
 
 </body>
-          <footer style="background-color: black; color: white; text-align: center; height: 35px;"> Hermione Parades
-                and
-                Stephanie Toralde | 9-Topaz OBMC GH 2025-2026
-            </footer>
+<footer style="background-color: black; color: white; text-align: center; height: 35px;"> Hermione Parades
+    and
+    Stephanie Toralde | 9-Topaz OBMC GH 2025-2026
+</footer>
+
 </html>
