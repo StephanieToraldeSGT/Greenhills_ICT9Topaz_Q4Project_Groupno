@@ -51,6 +51,12 @@ function take_activity() {
     window.alert("Oops! It seems you're no longer able to complete this activity after the deadline!")
 }
 
+function movie_clip() {
+    window.alert("Redirecting you to GDrive: Give Up Tommorrow (2011) Movie...")
+
+    window.location.href = "https://drive.google.com/file/d/1XJXCIEEVXK8SlSnsFjIOljz-UoaORO-S/view"
+}
+
 function submit_output() {
     window.alert("Oops! It seems you're no longer able to submit a file after the deadline!")
 }
