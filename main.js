@@ -45,7 +45,7 @@ function validateLogin(event) {
     } else {
         localStorage.removeItem("savedUser");
 }        
-    window.location.href = "dashboard.html";
+    window.location.replace ("dashboard.html");
     }
 
 function take_activity() {
