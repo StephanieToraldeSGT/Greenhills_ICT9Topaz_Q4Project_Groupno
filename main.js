@@ -54,7 +54,7 @@ function validateLogin(event) {
 }
 
 function toggleInstructions() {
-  var element = document.getElementById("instructions");
+  var element = document.getElementById("Instructions");
   
   if (element.style.display === "none") {
     element.style.display = "block";
