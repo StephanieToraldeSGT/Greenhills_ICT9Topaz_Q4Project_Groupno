@@ -1,3 +1,5 @@
+let attempts = 3;
+
 function validateLogin(event) {
     event.preventDefault();
 
@@ -7,8 +9,8 @@ function validateLogin(event) {
 
     let correctUsername = "admin";
     let correctPassword = "1234";
-    let attempts = 3;
-    
+
+    //wrong login consequence
     if (attempts <= 0) {
         alert("You are locked out. Refresh the page to try again.");
         return;
@@ -16,9 +18,10 @@ function validateLogin(event) {
 
     if (username !== correctUsername || password !== correctPassword) {
 
-        attempts - 1; 
+        attempts--; 
     }
 
+    //wrong login
         if (username === password) {
             alert("Username and password cannot be the same!");
         }
@@ -34,15 +37,16 @@ function validateLogin(event) {
         return;
     }
 
+//correct login
     alert("Login successful!");
 
     if (remember) {
         localStorage.setItem("savedUser", username);
     } else {
         localStorage.removeItem("savedUser");
-
+}        
     window.location.href = "dashboard.html";
-}
+    }
 
 function take_activity() {
     window.alert("Oops! It seems you're no longer able to complete this activity after the deadline!")
