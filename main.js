@@ -10,8 +10,7 @@ function validateLogin(event) {
 
     let correctUsername = "admin";
     let correctPassword = "1234";
-    let correctStudentId = "167167167";
-
+    
     if (attempts <= 0) {
         alert("You are locked out. Refresh the page to try again.");
         return;
