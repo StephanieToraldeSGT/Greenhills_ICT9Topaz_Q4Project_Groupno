@@ -1,5 +1,3 @@
-  let attempts = 3;
-
 function validateLogin(event) {
     event.preventDefault();
 
@@ -9,6 +7,7 @@ function validateLogin(event) {
 
     let correctUsername = "admin";
     let correctPassword = "1234";
+    let attempts = 3;
     
     if (attempts <= 0) {
         alert("You are locked out. Refresh the page to try again.");
