@@ -5,10 +5,12 @@ function validateLogin(event) {
 
     let username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
+    let studentid = document.getElementById("studentid").value;
     let remember = document.getElementById("remember").checked;
 
     let correctUsername = "admin";
     let correctPassword = "1234";
+    let correctStudentId = "167167167"
 
     if (attempts <= 0) {
         alert("You are locked out. Refresh the page to try again.");
@@ -28,8 +30,12 @@ function validateLogin(event) {
         else if (password.length < 5) {
             alert("Password must be at least 5 characters long!");
         }
+        else if (studentid.length = 0) {
+            alert("Please input student ID.");
+        }
+             
         else {
-            alert("Invalid username or password!");
+            alert("Invalid username, student ID or password!");
         }
 
         alert("Attempts left: " + attempts);
