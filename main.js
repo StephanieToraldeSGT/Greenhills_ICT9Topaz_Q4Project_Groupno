@@ -38,6 +38,10 @@ function validateLogin(event) {
     }
 
 //correct login
+
+if (username = correctUsername || password = correctPassword) {
+
+
     alert("Login successful!");
 
     if (remember) {
