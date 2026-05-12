@@ -53,16 +53,6 @@ function validateLogin(event) {
     window.location.href = "dashboard.html";
 }
 
-function toggleInstructions() {
-  var element = document.getElementById("instructions");
-  
-  if (element.style.display === "none") {
-    element.style.display = "block";
-  } else {
-    element.style.display = "none";
-  }
-}
-
 function take_activity() {
     window.alert("Oops! It seems you're no longer able to complete this activity after the deadline!")
 }
