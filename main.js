@@ -29,7 +29,7 @@ function validateLogin(event) {
         }
         
         else {
-            alert("Invalid username, student ID or password!");
+            alert("Invalid username or password!");
         }
 
         alert("Attempts left: " + attempts);
