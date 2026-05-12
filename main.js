@@ -17,9 +17,10 @@ function validateLogin(event) {
         return;
     }
 
-    if (username !== correctUsername || password !== correctPassword || studentid !== correctStudentId) {
+    if (username !== correctUsername || password !== correctPassword) {
 
-        attempts--; }
+        attempts--; 
+    }
 
         if (username === password) {
             alert("Username and password cannot be the same!");
@@ -28,10 +29,6 @@ function validateLogin(event) {
             alert("Username must be at least 5 characters long!");
         }
         
-         else if (studentid.length < 5) {
-            alert("Student ID must be at least 5 characters long!");
-        }
-             
         else {
             alert("Invalid username, student ID or password!");
         }
