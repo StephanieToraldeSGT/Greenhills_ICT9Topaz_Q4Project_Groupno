@@ -52,6 +52,17 @@ h1 {
         Enter username and password. Use admin / 1234. Student ID is 167167167.
     </p>
 
+ <script>   function toggleInstructions() {
+  var element = document.getElementById("instructions");
+  
+  if (element.style.display === "none") {
+    element.style.display = "block";
+  } else {
+    element.style.display = "none";
+  }
+}
+ </script>
+
     <form onsubmit="validateLogin(event)">
 
         <div class="mb-3">
