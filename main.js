@@ -1,6 +1,6 @@
 let attempts = 3;
 
-function validateLogin(event) {
+function validateLogin() {
     event.preventDefault();
 
     let username = document.getElementById("username").value;
