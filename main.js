@@ -16,7 +16,7 @@ function validateLogin(event) {
 
     if (username !== correctUsername || password !== correctPassword) {
 
-        attempts--; 
+        attempts - 1; 
     }
 
         if (username === password) {
