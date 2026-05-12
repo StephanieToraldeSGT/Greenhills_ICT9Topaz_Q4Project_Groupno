@@ -41,7 +41,6 @@ function validateLogin(event) {
         localStorage.setItem("savedUser", username);
     } else {
         localStorage.removeItem("savedUser");
-    }
 
     window.location.href = "dashboard.html";
 }
