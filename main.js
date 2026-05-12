@@ -39,17 +39,16 @@ function validateLogin(event) {
 
 //correct login
 
-if (username = correctUsername || password = correctPassword) {
-
-
-    alert("Login successful!");
-
+    if (username = correctUsername || password = correctPassword) {
+        alert("Login successful!");
+         window.location.replace ("dashboard.html");
+    }
     if (remember) {
-        localStorage.setItem("savedUser", username);
-    } else {
+        localStorage.setItem("savedUser", username); 
+    }
+        
+    else {
         localStorage.removeItem("savedUser");
-}        
-    window.location.replace ("dashboard.html");
     }
 
 function take_activity() {
