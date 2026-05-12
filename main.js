@@ -5,7 +5,6 @@ function validateLogin(event) {
 
     let username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
-    let studentid = document.getElementById("studentid").value;
     let remember = document.getElementById("remember").checked;
 
     let correctUsername = "admin";
