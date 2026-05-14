@@ -10,28 +10,27 @@ function validateLogin(event) {
     let correctUsername = "admin";
     let correctPassword = "1234";
 
-    // correct login
-    if (username === correctUsername && password === correctPassword) {
-        alert("Login successful!");
+    // 1. Check if user is already locked out
+    if (attempts <= 0) {
+        alert("You are locked out. Refresh the page to try again.");
+        return;
     }
 
-    if (remember) {
+    // 2. Handle correct login
+    if (username === correctUsername && password === correctPassword) {
+        alert("Login successful!");
+
+        if (remember) {
             localStorage.setItem("savedUser", username); 
         } else {
             localStorage.removeItem("savedUser");
         }
         
         window.location.replace("dashboard.html");
-        return;
+        return; // Stops execution here so it doesn't run the wrong login code
     }
 
-    //wrong login consequence
-    if (attempts <= 0) {
-        alert("You are locked out. Refresh the page to try again.");
-        return;
-    }
-
-    //wrong login
+    // 3. Handle wrong login logic
     attempts--; 
 
     if (username === password) {
@@ -46,15 +45,14 @@ function validateLogin(event) {
 }
 
 function take_activity() {
-    window.alert("Oops! It seems you're no longer able to complete this activity after the deadline!")
+    window.alert("Oops! It seems you're no longer able to complete this activity after the deadline!");
 }
 
 function movie_clip() {
-    window.alert("Redirecting you to GDrive: Give Up Tommorrow (2011) Movie...")
-
-    window.location.href = "https://drive.google.com/file/d/1XJXCIEEVXK8SlSnsFjIOljz-UoaORO-S/view"
+    window.alert("Redirecting you to GDrive: Give Up Tomorrow (2011) Movie...");
+    window.location.href = "https://drive.google.com/file/d/1XJXCIEEVXK8SlSnsFjIOljz-UoaORO-S/view";
 }
 
 function submit_output() {
-    window.alert("Oops! It seems you're no longer able to submit a file after the deadline!")
+    window.alert("Oops! It seems you're no longer able to submit a file after the deadline!");
 }
