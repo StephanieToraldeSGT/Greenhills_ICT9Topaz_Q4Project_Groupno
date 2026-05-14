@@ -1,6 +1,6 @@
 let attempts = 3;
 
-function validateLogin() {
+function validateLogin(event) {
     event.preventDefault();
     
     let username = document.getElementById("username").value;
@@ -9,6 +9,21 @@ function validateLogin() {
     
     let correctUsername = "admin";
     let correctPassword = "1234";
+
+    // correct login
+    if (username === correctUsername && password === correctPassword) {
+        alert("Login successful!");
+    }
+
+    if (remember) {
+            localStorage.setItem("savedUser", username); 
+        } else {
+            localStorage.removeItem("savedUser");
+        }
+        
+        window.location.replace("dashboard.html");
+        return;
+    }
 
     //wrong login consequence
     if (attempts <= 0) {
@@ -29,21 +44,6 @@ function validateLogin() {
 
     alert("Attempts left: " + attempts);
 }
-
-    // correct login
-    if (username === correctUsername && password === correctPassword) {
-        alert("Login successful!");
-    }
-
-    if (remember) {
-            localStorage.setItem("savedUser", username); 
-        } else {
-            localStorage.removeItem("savedUser");
-        }
-        
-        window.location.replace("dashboard.html");
-        return;
-    } 
 
 function take_activity() {
     window.alert("Oops! It seems you're no longer able to complete this activity after the deadline!")
