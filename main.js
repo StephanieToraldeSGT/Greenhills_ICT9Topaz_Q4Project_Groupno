@@ -10,13 +10,13 @@ function validateLogin(event) {
     let correctUsername = "admin";
     let correctPassword = "1234";
 
-    // 1. Check if user is already locked out
+    // login attempts failed
     if (attempts <= 0) {
         alert("You are locked out. Refresh the page to try again.");
         return;
     }
 
-    // 2. Handle correct login
+    // login successful
     if (username === correctUsername && password === correctPassword) {
         alert("Login successful!");
 
@@ -27,10 +27,10 @@ function validateLogin(event) {
         }
         
         window.location.replace("dashboard.html");
-        return; // Stops execution here so it doesn't run the wrong login code
+        return;
     }
 
-    // 3. Handle wrong login logic
+    // more random
     attempts--; 
 
     if (username === password) {
