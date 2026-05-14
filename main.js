@@ -2,11 +2,11 @@ let attempts = 3;
 
 function validateLogin() {
     event.preventDefault();
-
+    
     let username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
     let remember = document.getElementById("remember").checked;
-
+    
     let correctUsername = "admin";
     let correctPassword = "1234";
 
@@ -16,40 +16,34 @@ function validateLogin() {
         return;
     }
 
-    if (username !== correctUsername || password !== correctPassword) {
-
-        attempts--; 
-    }
-
     //wrong login
-        if (username === password) {
-            alert("Username and password cannot be the same!");
-        }
-        else if (username.length < 5) {
-            alert("Username must be at least 5 characters long!");
-        }
-        
-        else {
-            alert("Invalid username or password!");
-        }
+    attempts--; 
 
-        alert("Attempts left: " + attempts);
-        return;
+    if (username === password) {
+        alert("Username and password cannot be the same!");
+    } else if (username.length < 5) {
+        alert("Username must be at least 5 characters long!");
+    } else {
+        alert("Invalid username or password!");
     }
 
-//correct login
+    alert("Attempts left: " + attempts);
+}
 
-    if (username = correctUsername || password = correctPassword) {
+    // correct login
+    if (username === correctUsername && password === correctPassword) {
         alert("Login successful!");
-         window.location.replace ("dashboard.html");
     }
+
     if (remember) {
-        localStorage.setItem("savedUser", username); 
-    }
+            localStorage.setItem("savedUser", username); 
+        } else {
+            localStorage.removeItem("savedUser");
+        }
         
-    else {
-        localStorage.removeItem("savedUser");
-    }
+        window.location.replace("dashboard.html");
+        return;
+    } 
 
 function take_activity() {
     window.alert("Oops! It seems you're no longer able to complete this activity after the deadline!")
