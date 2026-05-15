@@ -67,17 +67,17 @@
 
                 <form>
                     <div class="profile-box">
-                    <img src="C:\Users\User\Downloads/jpeg.jpg" id="preview" class="profile-pic">
+                    <img src="jpeg.jpg" id="preview" class="profile-pic">
                     <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file" class="form-control mt-3">
                     </div>
 
                 <script>
                     
-                let profilePic = document.geElementbyId("preview");
-                let inputFile = document.getElementbyId("input-file");
+                let profilePic = document.getElementById("preview");
+                let inputFile = document.getElementById("input-file");
 
                 inputFile.onchange = function(){
-                    profilePic.src = URL.createObjectURL.(inputFile.files[0])
+                    profilePic.src = URL.createObjectURL(inputFile.files[0])
                     
                 }
                 </script>
@@ -108,11 +108,11 @@
     </div>
 
 </div>
-
-</body>
-       <footer style="background-color: black; color: white; text-align: center; height: 35px;"> Hermione Parades
+   <footer style="background-color: black; color: white; text-align: center; height: 35px;"> Hermione Parades
                 and
                 Stephanie Toralde | 9-Topaz OBMC GH 2025-2026
             </footer>
 
+</body>
+    
 </html>
