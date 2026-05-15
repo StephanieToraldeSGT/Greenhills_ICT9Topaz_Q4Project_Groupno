@@ -68,10 +68,18 @@
                 <form>
                     <div class="profile-box">
                     <img src="jpeg.jpg" id="preview" class="profile-pic">
-                    <input type="file" accept="image/*"
-                    onchange="document.getElementById('preview').src = URL.createObjectURL(input.files[0])"
-                    class="form-control mt-3">
+                    <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file" class="form-control mt-3">
                     </div>
+
+                <script>
+                let profilePic = document.geElementbyId("preview");
+                let inputFile = document.getElementbyId("input-file");
+
+                inputFile.onchange = function(){
+                    profilePic.src = URL.createObjectURL.(inputFile.files[0])
+                    
+                }
+                </script>
 
                 </form>
 
